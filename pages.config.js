@@ -1,7 +1,7 @@
-import { definePages } from '@uni-helper/vite-plugin-uni-pages'
+import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 import { title } from './src/configs/index'
 
-export default definePages({
+export default defineUniPages({
   easycom: {
     autoscan: true,
     custom: {
@@ -33,15 +33,6 @@ export default definePages({
       },
     },
     {
-      path: 'pages/public/login',
-      shortcut: '/login',
-      style: {
-        navigationBarTitleText: '',
-        navigationBarTextStyle: 'black',
-        navigationBarBackgroundColor: '#ffffff',
-      },
-    },
-    {
       path: 'pages/user/index',
       shortcut: '/tab-1',
       // middleware: ['permission'],
@@ -61,57 +52,57 @@ export default definePages({
   ],
   // 分包配置
   subPackages: [
-    {
-      root: 'pages/public',
-      pages: [
-        {
-          path: 'login',
-          style: {
-            navigationBarTitleText: '登录',
-          },
-        },
-        {
-          path: 'login-type',
-          style: {
-            navigationBarTitleText: '登录',
-          },
-        },
-        {
-          path: 'register',
-          style: {
-            navigationBarTitleText: '注册',
-          },
-        },
-      ],
-    },
-    {
-      root: 'pages/setting',
-      pages: [
-        {
-          path: 'index',
-          style: {
-            navigationBarTitleText: '设置',
-          },
-        },
-      ],
-    },
-    {
-      root: 'pages/product',
-      pages: [
-        {
-          path: 'list',
-          style: {
-            navigationBarTitleText: '商品列表',
-          },
-        },
-        {
-          path: 'detail',
-          style: {
-            navigationBarTitleText: '详情',
-          },
-        },
-      ],
-    },
+    // {
+    //   root: 'pages/public',
+    //   pages: [
+    //     {
+    //       path: 'login',
+    //       style: {
+    //         navigationBarTitleText: '登录',
+    //       },
+    //     },
+    //     {
+    //       path: 'login-type',
+    //       style: {
+    //         navigationBarTitleText: '登录',
+    //       },
+    //     },
+    //     {
+    //       path: 'register',
+    //       style: {
+    //         navigationBarTitleText: '注册',
+    //       },
+    //     },
+    //   ],
+    // },
+    // {
+    //   root: 'pages/setting',
+    //   pages: [
+    //     {
+    //       path: 'index',
+    //       style: {
+    //         navigationBarTitleText: '设置',
+    //       },
+    //     },
+    //   ],
+    // },
+    // {
+    //   root: 'pages/product',
+    //   pages: [
+    //     {
+    //       path: 'list',
+    //       style: {
+    //         navigationBarTitleText: '商品列表',
+    //       },
+    //     },
+    //     {
+    //       path: 'detail',
+    //       style: {
+    //         navigationBarTitleText: '详情',
+    //       },
+    //     },
+    //   ],
+    // },
   ],
   // 预加载
   preloadRule: {

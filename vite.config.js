@@ -1,7 +1,7 @@
 import { defineConfig, loadEnv } from 'vite'
 import path from 'node:path'
-import useUniapp from '@dcloudio/vite-plugin-uni'
-import useUniPages from '@uni-helper/vite-plugin-uni-pages'
+import Uni from '@dcloudio/vite-plugin-uni'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import useUniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import useUniMiddleware from '@uni-helper/vite-plugin-uni-middleware'
 import useUnocss from 'unocss/vite'
@@ -18,7 +18,7 @@ const env = loadEnv('', process.cwd(), '')
 export default defineConfig({
   plugins: [
     useUnocss(),
-    useUniPages({
+    UniPages({
       onAfterScanPages(ctx) {
         // console.log('onAfterScanPages.ctx', ctx)
         // TODO 禁用合并自动扫描到的pages
@@ -28,7 +28,7 @@ export default defineConfig({
     }),
     useUniManifest(),
     useUniMiddleware(),
-    useUniapp(),
+    Uni(),
     useEslint(),
   ],
   server: {
@@ -61,8 +61,6 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src/'),
-      // 临时解决 pinia使用异常问题
-      // 'vue-demi': 'vue-demi/lib/v3/index.mjs',
     },
   },
   // define: {

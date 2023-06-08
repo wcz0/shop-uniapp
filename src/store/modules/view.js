@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 import _isEqual from 'lodash/isEqual'
 
 const rootView = {
-  fullPath: '/home',
+  fullPath: '/index',
   path: '/home',
   name: 'Home',
   title: '全景地图',
