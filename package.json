@@ -2,6 +2,7 @@
   "name": "show-uview",
   "version": "0.0.1",
   "scripts": {
+    "serve": "uni",
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
     "dev:app-ios": "uni -p app-ios",
@@ -53,6 +54,7 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-3080420230531001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-3080420230531001",
     "@uni-helper/uni-network": "^0.15.0",
+    "@unocss/reset": "^0.53.1",
     "crypto-js": "^4.1.1",
     "dayjs": "^1.11.7",
     "lodash": "^4.17.21",
@@ -60,7 +62,7 @@
     "qs": "^6.11.2",
     "uni-native-router": "^1.1.2",
     "uview-ui": "^2.0.36",
-    "vue": "^3.2.45",
+    "vue": "^3.3.4",
     "vue-i18n": "^9.1.9"
   },
   "devDependencies": {
@@ -80,7 +82,8 @@
     "mini-types": "^0.1.7",
     "miniprogram-api-typings": "^3.8.1",
     "patch-package": "^7.0.0",
-    "postcss": "^8.1.0",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
     "sass": "^1.57.1",
     "unocss": "0.53.1",
     "unocss-applet": "0.5.2",

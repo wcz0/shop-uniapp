@@ -147,7 +147,6 @@
   },
   "globalStyle": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "shop-uview",
     "navigationBarBackgroundColor": "#2B8AFF",
     "backgroundColor": "#F9F9F9"
   }

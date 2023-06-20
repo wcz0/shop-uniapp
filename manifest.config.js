@@ -1,7 +1,5 @@
-import { title } from "./src/configs/index";
-
 export default {
-  name: title,
+  name: process.env.VITE_APP_TITLE,
   appid: "",
   description: "",
   versionName: "1.0.0",

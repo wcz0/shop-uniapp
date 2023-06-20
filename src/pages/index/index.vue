@@ -1,6 +1,6 @@
 <template lang="">
   <view>
-    <text>Hello World</text>
+    <text>Hello World!!!</text>
   </view>
 </template>
 <script>

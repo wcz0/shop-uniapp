@@ -9,7 +9,8 @@ import ViaIcon from './icons/components/ViaIcon/index.vue'
 
 import { useDialog, useToast, useLoading } from './utils/modals/index.js'
 
-import './styles/css/index.js'
+import 'virtual:uno.css'
+import '@unocss/reset/normalize.css'
 
 export function createApp() {
   const app = createSSRApp(App)
