@@ -3,7 +3,7 @@ import App from './App.vue'
 import store from './store/index.js'
 import router from './router/index.js'
 import api from './api/index.js'
-import plugins from './plugins/index.js'
+// import plugins from './plugins/index.js'
 // import icons from './icons/index.js'
 import ViaIcon from './icons/components/ViaIcon/index.vue'
 
@@ -18,7 +18,7 @@ export function createApp() {
   app.use(store)
   app.use(router)
   app.use(api)
-  app.use(plugins)
+  // app.use(plugins)
   // app.use(icons)
   // TODO 解决use方式无法正常挂载组件的问题
   app.component('ViaIcon', ViaIcon)

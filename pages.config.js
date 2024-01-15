@@ -1,5 +1,4 @@
 import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
-import { title } from './src/configs/index'
 
 export default defineUniPages({
   easycom: {
@@ -152,7 +151,7 @@ export default defineUniPages({
   },
   globalStyle: {
     navigationBarTextStyle: 'white',
-    navigationBarTitleText: title,
+    navigationBarTitleText: process.env.VITE_APP_TITLE,
     navigationBarBackgroundColor: '#2B8AFF',
     backgroundColor: '#F9F9F9',
   },

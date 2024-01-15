@@ -6,15 +6,9 @@ import useUniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import useUniMiddleware from '@uni-helper/vite-plugin-uni-middleware'
 import useUnocss from 'unocss/vite'
 import useEslint from 'vite-plugin-eslint'
-// import {
-//   useProxy,
-//   proxyPath,
-//   proxyURL,
-//   appBasePath,
-// } from './src/configs/devServer.js'
-// https://vitejs.dev/config/
+import Components from 'unplugin-vue-components/vite'
 
-export default defineConfig(({ command, mode }) => {
+export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   const isProxy = env.UNI_PLATFORM === 'h5'
   return {
@@ -30,6 +24,7 @@ export default defineConfig(({ command, mode }) => {
       }),
       useUniManifest(),
       useUniMiddleware(),
+      Components(),
       Uni(),
       useEslint(),
     ],

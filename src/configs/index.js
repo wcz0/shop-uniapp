@@ -2,8 +2,6 @@
 const isProduction = process.env.NODE_ENV === 'production'
 const isH5 = process.env.UNI_PLATFORM === 'h5'
 
-// export const title = process.env.VITE_APP_TITLE
-
 export const company = {
   name: 'shop-uview',
   wechat: 'shop-uview',
@@ -28,7 +26,6 @@ export const useEncrypt = false
 export const assetURL = 'https://cdn.com'
 
 export default {
-  // title,
   appBasePath,
   requestURL,
   useProxy,
