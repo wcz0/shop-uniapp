@@ -7,8 +7,8 @@
   },
   "pages": [
     {
-      "path": "pages/index/index",
-      "type": "home",
+      "path": "pages/home/index",
+      "shortcut": "/home",
       "style": {
         "navigationStyle": "custom",
         "enablePullDownRefresh": true,
@@ -27,7 +27,7 @@
           "scrollIndicator": "none"
         }
       },
-      "shortcut": "/index"
+      "type": "home"
     },
     {
       "path": "pages/category/index",
@@ -40,6 +40,11 @@
     },
     {
       "path": "pages/category/search",
+      "type": "page",
+      "style": {}
+    },
+    {
+      "path": "pages/home/index",
       "type": "page",
       "style": {}
     },
